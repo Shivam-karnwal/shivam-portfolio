@@ -11,20 +11,30 @@ export default function Contact() {
           📬 Contact Me
         </h2>
 
-        <form className="space-y-4">
+        <form
+          action="https://formspree.io/f/xyzjlrdy"
+          method="POST"
+          className="space-y-4"
+        >
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
+            required
             className="w-full p-3 rounded-lg bg-white/20 backdrop-blur-sm text-white placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
+            required
             className="w-full p-3 rounded-lg bg-white/20 backdrop-blur-sm text-white placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
           <textarea
+            name="message"
             placeholder="Your Message"
             rows="5"
+            required
             className="w-full p-3 rounded-lg bg-white/20 backdrop-blur-sm text-white placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           ></textarea>
           <button
